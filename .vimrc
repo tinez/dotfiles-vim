@@ -21,6 +21,7 @@ set expandtab
 set statusline=%<%f%h%m%r\ \x%02B\ %{&encoding}\ 0x\ \ %l,%c%V\ %P 
 set laststatus=2
 set sessionoptions=curdir,buffers,tabpages
+set cpoptions+=$                                                    " Show where changing ends
 
 "--- indentation options ---
 set shiftwidth=4
