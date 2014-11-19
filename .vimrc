@@ -107,3 +107,6 @@ if hostname() == "PLK-MSOBCZY2-DT"
     let g:tagbar_width=50
     set guifont=Consolas:h14:cEASTEUROPE
 endif
+
+"--- per filetype options ---
+au FileType yaml setl sw=2 sts=2 ts=2 et
