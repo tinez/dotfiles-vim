@@ -50,6 +50,7 @@ syntax on
 
 "--- plugin shortcuts ---
 nmap <F9> :TagbarToggle<CR>
+nmap <C-\> :tselect<CR>
 noremap <silent> <F10> :BufExplorer<CR>
 noremap <silent> <m-F10> :BufExplorerHorizontalSplit<CR>
 noremap <silent> <c-F10> :BufExplorerVerticalSplit<CR>
