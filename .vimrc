@@ -21,7 +21,7 @@ set expandtab
 set statusline=%<%f%h%m%r\ \x%02B\ %{&encoding}\ 0x\ \ %l,%c%V\ %P 
 set laststatus=2
 set sessionoptions=curdir,buffers,tabpages
-set cpoptions+=$                                                    " Show where changing ends
+set tags+=~/.vim/tags/*/tags
 
 "--- indentation options ---
 set shiftwidth=4
@@ -101,12 +101,8 @@ function! Refresh_browser()
     endif
 endfunction
 
-"--- hostname specific ---
-if hostname() == "PLK-MSOBCZY2-DT"
-    let g:tagbar_ctags_bin = "c:\\Program Files (x86)\\ctags58\\ctags.exe"
-    let g:tagbar_width=50
-    set guifont=Consolas:h14:cEASTEUROPE
-endif
+"--- crontab fix for os x ---
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 "--- per filetype options ---
 au FileType yaml setl sw=2 sts=2 ts=2 et
