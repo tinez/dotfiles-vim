@@ -106,3 +106,4 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 
 "--- per filetype options ---
 au FileType yaml setl sw=2 sts=2 ts=2 et
+au FileType c,h,cpp setl sw=2 sts=2 ts=2 et
