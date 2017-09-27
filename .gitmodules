@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/meson"]
 	path = .vim/bundle/meson
 	url = https://github.com/stfl/meson.vim.git
+[submodule ".vim/bundle/vim-abolish"]
+	path = .vim/bundle/vim-abolish
+	url = git://github.com/tpope/vim-abolish.git
