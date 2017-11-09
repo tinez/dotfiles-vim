@@ -107,3 +107,12 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 "--- per filetype options ---
 au FileType yaml setl sw=2 sts=2 ts=2 et
 au FileType c,h,cpp setl sw=2 sts=2 ts=2 et
+au BufNewFile,BufRead *.js, *.html, *.css setl sw=2 sts=2 ts=2 et
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
