@@ -80,6 +80,9 @@ let g:NERDTreeWinPos = "right"
 "--- autotag options ---
 let g:autotagCtagsArgs = "--c++-kinds=+p --fields=+iaS --extra=+q" 
 
+"--- flake8 options ---
+let g:flake8_cmd="/usr/bin/flake8-2"
+
 "--- screen ctrl+arrow fix ---
 if &term =~ '^screen'
     execute "set <xUp>=\e[1;*A"
@@ -116,3 +119,4 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+
