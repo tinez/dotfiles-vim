@@ -94,16 +94,6 @@ endif
 "--- supertab options ---
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
-"--- firefox auto-refresh ---
-autocmd BufWriteCmd *.html,*.css,*.haml :call Refresh_browser()
-
-function! Refresh_browser()
-    if &modified
-        write
-        silent !refresh_firefox.sh
-    endif
-endfunction
-
 "--- crontab fix for os x ---
 autocmd filetype crontab setlocal nobackup nowritebackup
 
