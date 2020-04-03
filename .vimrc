@@ -3,6 +3,9 @@ set nocompatible
 "--- use pathogen ---
 execute pathogen#infect()
 
+"--- add fzf to runtime path ---
+set rtp+=~/.fzf
+
 "--- various options ---
 set history=200		
 set ruler		
@@ -51,7 +54,8 @@ syntax on
 "--- plugin shortcuts ---
 nmap <F9> :TagbarToggle<CR>
 nmap <C-\> :tselect<CR>
-noremap <silent> <F10> :BufExplorer<CR>
+nmap <C-t> :Files<CR>
+noremap <silent> <F10> :Buffer<CR>
 noremap <silent> <m-F10> :BufExplorerHorizontalSplit<CR>
 noremap <silent> <c-F10> :BufExplorerVerticalSplit<CR>
 
