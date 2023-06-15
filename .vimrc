@@ -6,6 +6,9 @@ execute pathogen#infect()
 "--- add fzf to runtime path ---
 set rtp+=~/.fzf
 
+"--- disable mouse
+set mouse=
+
 "--- various options ---
 set history=200		
 set ruler		
@@ -100,6 +103,9 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 "--- crontab fix for os x ---
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+"--- fix autoreload for nvim ---
+autocmd FocusGained * checktime
 
 "--- per filetype options ---
 au FileType yaml setl sw=2 sts=2 ts=2 et
